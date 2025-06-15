@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        function user(n,a,p){
+            this.name = n;
+            this.age = a;
+            this.place = p;
+        }
+
+        let user1 = new user("abc", 25,"Hyderabad")
+        console.log(user1.name);
+        console.log(user1.age);
+        let user2 = new user("xys", 30, "Chennai")
+        console.log(user2.name);
+        console.log(user2.city);
+        user2.mobile =9898989898
+        console.log(user2.mobile);
+        let movie = {  name:"RRR", director:"Rajamouli", rating: 9.5, year: 2022, cast: ["Ram Charan", "NTR Jr.", "Alia Bhatt"] };
+        console.log(movie.name);
+        console.log(movie.director);
+        console.log(movie.rating);
+        console.log(movie.year);
+        console.log(movie.cast[0]);
+        console.log(movie.cast[1]);
+        console.log(movie.cast[2]);
+    </script>
+</body>
+</html>
